@@ -10,7 +10,7 @@ import Foundation
 
 class HackerNewsRemoteDataSource: HackerNewsRemoteDataSourceProtocol {
     func getTopNews(success: @escaping ([Double]) -> Void, failure: @escaping (NSError) -> Void) {
-        
+
     }
     
     func getNewsDetail(id: Double, success: @escaping (ResponseNewsModel) -> Void, failure: @escaping (NSError) -> Void) {

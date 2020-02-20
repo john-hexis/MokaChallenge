@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E33485A23FEE59D0052BE9E /* HackerNewsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E33485923FEE59D0052BE9E /* HackerNewsRepositoryTests.swift */; };
 		2E7D9BDC23FADFA8005F47CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D9BDB23FADFA8005F47CE /* AppDelegate.swift */; };
 		2E7D9BDE23FADFA8005F47CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D9BDD23FADFA8005F47CE /* SceneDelegate.swift */; };
 		2E7D9BE623FADFA8005F47CE /* MokaChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D9BE423FADFA8005F47CE /* MokaChallenge.xcdatamodeld */; };
@@ -69,6 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E33485923FEE59D0052BE9E /* HackerNewsRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsRepositoryTests.swift; sourceTree = "<group>"; };
 		2E7D9BD823FADFA8005F47CE /* MokaChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MokaChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7D9BDB23FADFA8005F47CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E7D9BDD23FADFA8005F47CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E33485B23FEE5FB0052BE9E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				2E33485923FEE59D0052BE9E /* HackerNewsRepositoryTests.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		2E33485C23FEE60B0052BE9E /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				2E33485D23FEE6190052BE9E /* Interactors */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		2E33485D23FEE6190052BE9E /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
 		2E7D9BCF23FADFA8005F47CE = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +209,8 @@
 		2E7D9BF423FADFAC005F47CE /* MokaChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				2E33485C23FEE60B0052BE9E /* Scene */,
+				2E33485B23FEE5FB0052BE9E /* Repositories */,
 				2E7D9BF523FADFAC005F47CE /* MokaChallengeTests.swift */,
 				2E7D9BF723FADFAC005F47CE /* Info.plist */,
 			);
@@ -549,6 +576,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E33485A23FEE59D0052BE9E /* HackerNewsRepositoryTests.swift in Sources */,
 				2E7D9BF623FADFAC005F47CE /* MokaChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -716,7 +744,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.MokaChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -734,7 +762,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.MokaChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
